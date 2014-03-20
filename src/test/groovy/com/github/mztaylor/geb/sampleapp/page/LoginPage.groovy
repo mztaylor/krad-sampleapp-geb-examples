@@ -1,12 +1,12 @@
 package com.github.mztaylor.geb.sampleapp.page
 
 import geb.Page
-import com.github.mztaylor.geb.sampleapp.module.*
+import com.github.mztaylor.geb.sampleapp.module.nav.*
      
 class LoginPage extends Page {
     static at = { heading.text() == "Login" }
     static content = {
-        navbar { module NavigationModule } 
+        navbar { module KradNavBar } 
         heading { $("h1") }
         loginForm { $("form.kualiForm") }
 	loginButton(to: KradMainPage) { $("button[id='Rice-LoginButton']") }

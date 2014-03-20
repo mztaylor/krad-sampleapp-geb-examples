@@ -32,12 +32,21 @@ class KradSampleappSpec extends GebReportingSpec {
     }
     
     def "go to library page"() {
-        given:
-	KradMainPage
 	when:
+	  at KradMainPage
 	  navbar.libraryTabLink.click()
  	then:
-	  assert(KradMainPage)
+	  assert(KradLibraryPage)
+    }
+
+    def "go to action section in library page"() {
+        when: 
+	at KradLibraryPage
+	libraryNavbar.elementLink.click()
+	libraryNavbar.elementsSection.actionLink.click()
+
+        then:
+          assert(KradLibraryPage)
     }
     
 }
