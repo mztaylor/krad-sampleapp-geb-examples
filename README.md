@@ -1,11 +1,5 @@
-## Background
-
-This is a sample geb testing of the kuali rice sampleapp.  After a series of manual testing events 
-I thought it would be fun to start experimenting with lighter selenium testing frameworks.  
-Since the project being testing is using maven and java I wanted to stay compatible, hence geb.
-
 ## Goal
-The goal of this project is to setup a series of tests that can be run on the 
+The goal of this project is to setup a series of tests that can be run using geb on:
 - krad-sampleapp (2.4.x)
 
 These test should be able to run in:

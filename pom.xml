@@ -74,7 +74,7 @@
             <include>*Spec.*</include>
           </includes>
           <systemPropertyVariables>
-            <geb.build.baseUrl>http://env14.rice.kuali.org</geb.build.baseUrl>
+            <geb.build.baseUrl>http://localhost:8080/krad-dev/</geb.build.baseUrl>
             <geb.build.reportsDir>target/test-reports/geb</geb.build.reportsDir>
           </systemPropertyVariables>
         </configuration>
